@@ -1,6 +1,5 @@
 import os
 import time
-
 import numpy as np
 import pandas as pd
 from scipy.spatial.distance import cdist, euclidean, cosine
@@ -11,7 +10,11 @@ from wav_reader import get_fft_spectrum
 import constants as c
 from keras.models import Model
 
-# 方法：计算不同帧数对应的最终输出尺寸是否大于 0
+'''
+方法：计算不同帧数对应的最终输出尺寸是否大于 0
+'''
+
+
 def build_buckets(max_sec, step_sec, frame_step):
 	buckets = {}
 	frames_per_sec = int(1/frame_step)# 1s/10ms = 100
@@ -33,57 +36,25 @@ def build_buckets(max_sec, step_sec, frame_step):
 	return buckets
 
 
-# def get_embedding(model, wav_file, max_sec):
-# 	buckets = build_buckets(max_sec, c.BUCKET_STEP, c.FRAME_STEP)
-# 	signal = get_fft_spectrum(wav_file, buckets)
-# 	embedding = np.squeeze(model.predict(signal.reshape(1,*signal.shape,1)))
-# 	return embedding
-
-
-# def get_embedding_batch(model, wav_files, max_sec):
-# 	return [ get_embedding(model, wav_file, max_sec) for wav_file in wav_files ]
-
-
 def get_embeddings_from_list_file(model, list_file, max_sec):
 	buckets = build_buckets(max_sec, c.BUCKET_STEP, c.FRAME_STEP)
 	result = pd.read_csv(list_file, delimiter=",")
 	result['features'] = result['filename'].apply(lambda x: get_fft_spectrum(c.FA_DIR+x, buckets)) # 获取每个人的语音特征 矩阵
-	# print(result['features'])
-	# print("********")
-	# print(result['features'].shape)# shape: [3,512,1000]
-	# print("********")
-	# print(result['features'][0].shape)
-	# os.system("pause")
-	# print("***features[0]*****")
-	# print(result['features'][0])# shape: [512,1000] or [512,900]
-	# print("********")
-	# print(result['features'][0].shape)
-	# print(result['features'][1].shape)
-	# print(result['features'][2].shape)
-	# print("****") # 900
-	# xxx = result['features'].apply(lambda x: x.reshape(1,*x.shape,1))
-	# x = result['features']
-	# xxx = x.reshape(1,*x.shape,1)
-	# print(xxx.shape)
-	# os.system("pause")
 
 	result['embedding'] = result['features'].apply(lambda x: np.squeeze(model.predict(x.reshape(1,*x.shape,1))))# to input (1, 512, 1000, 1) per voice(feature)
-	# print(result['embedding'])# shape: [3,1024]
-	# print(result['embedding'][0])# shape: [1024,]
-	# print(result['embedding'][0].shape)
-	# print(result['embedding'][1].shape)
-	# print(result['embedding'][2].shape)
 	return result[['filename','speaker','embedding']]
 
 
-# 方法：输入同一个人的不同语音，计算输出向量之间的余弦夹角，得到评分
+'''
+方法：输入同一个人的不同语音，计算输出向量之间的余弦夹角，得到评分
+'''
+
+
 def get_id_result():
-	print("Loading model weights from [{}]....".format(c.WEIGHTS_FILE))
+	print("Loading model weights from [{}]....".format(c.MY_WEIGHTS_FILE))
 	model = vggvox_model()
-	model.load_weights(c.WEIGHTS_FILE)
+	model.load_weights(c.MY_WEIGHTS_FILE)
 	model = Model(inputs=model.layers[0].input,outputs=model.layers[34].output) # 取 fc7 层的输出（1024,）
-	# model.summary()
-	# os.system("pause")
 
 	print("Processing enroll samples....")
 	enroll_result = get_embeddings_from_list_file(model, c.ENROLL_LIST_FILE, c.MAX_SEC)

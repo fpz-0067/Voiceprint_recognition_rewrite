@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="lab_server">
+    <serverData>
+      <paths name="lab_server">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/shengwenshibie" local="$PROJECT_DIR$/.." />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/../软件工程" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../webShow" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../voiceprint" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../userproject" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../untitled" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../SoftwareEngineering" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../Pro0930" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../Pro0928" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../Pro0925" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../p1102" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../P10142" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../p1013" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../P1012" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../P1010" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../P000000000000000" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../mysite" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../myfirst_web" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../ipbdlab" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../first" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../C4.5" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../Ajax" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../2019_10_27" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../20191012" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../20190329" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../20190112" />
+            <excludedPath local="true" path="$PROJECT_DIR$/models" />
+            <excludedPath path="/shengwenshibie/vggvox_rewrite/models" />
+            <excludedPath path="/shengwenshibie/vggvox_rewrite/nohup.out" />
+            <excludedPath local="true" path="$PROJECT_DIR$/nohup.out" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
