@@ -1,4 +1,7 @@
 import os
+os.environ["MKL_NUM_THREADS"] = '12'
+os.environ["NUMEXPR_NUM_THREADS"] = '12'
+os.environ["OMP_NUM_THREADS"] = '12'
 import keras
 import numpy as np
 import constants as c
@@ -8,9 +11,9 @@ import os
 
 '''
 设置多线程
-os.environ["MKL_NUM_THREADS"] = '4'
-os.environ["NUMEXPR_NUM_THREADS"] = '4'
-os.environ["OMP_NUM_THREADS"] = '4'
+os.environ["MKL_NUM_THREADS"] = '12'
+os.environ["NUMEXPR_NUM_THREADS"] = '12'
+os.environ["OMP_NUM_THREADS"] = '12'
 '''
 
 '''
@@ -116,7 +119,7 @@ class DataGenerator(keras.utils.Sequence):
 '''绘制训练损失图像'''
 
 
-def draw_loss_img(history_dict):
+def draw_loss_img(history_dict,save_path):
     loss_values = history_dict['loss']  # 训练损失
     # val_loss_values = history_dict['val_loss']  # 验证损失
     ep = range(1, len(loss_values) + 1)
@@ -128,13 +131,14 @@ def draw_loss_img(history_dict):
     plt.xlabel("Epochs")
     plt.ylabel('Loss')
     plt.legend()
+    plt.savefig(save_path)
     plt.show()
 
 
 '''绘制训练精度图像'''
 
 
-def draw_acc_img(history_dict):
+def draw_acc_img(history_dict,save_path):
     accs = history_dict['acc']  # 训练精度
     # val_acc = history_dict['val_acc']  # 验证精度
     ep = range(1, len(accs) + 1)
@@ -146,4 +150,5 @@ def draw_acc_img(history_dict):
     plt.xlabel('Epochs')
     plt.ylabel('Accuracy')
     plt.legend()  # 绘图
+    plt.savefig(save_path)
     plt.show()

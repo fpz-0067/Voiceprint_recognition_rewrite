@@ -29,5 +29,34 @@ def get_voxceleb1_datalist(FA_DIR, path):
 # print(i ==1)
 # print(i is 1)
 
+import os
+import time
+import numpy as np
+import pandas as pd
+from keras.models import load_model
+from scipy.spatial.distance import cdist, euclidean, cosine
+from glob import glob
+
+from model import vggvox_model
+from wav_reader import get_fft_spectrum
+import constants as c
+from keras.models import Model
+from keras.backend import set_learning_phase
+
+# model = vggvox_model()
+# model.load_weights(c.PERSONAL_WEIGHT)
+
+# set_learning_phase(1)
+
+model = load_model(c.MODEL_LOAD_PATH)
+
+model = Model(inputs=model.layers[0].input,outputs=model.layers[34].output) #34
+
+x = np.random.normal(0,1,(512,100))
+print(x.shape)
+xxx = model.predict(x.reshape(1,*x.shape,1))
+print(xxx)
+print(xxx.shape)
+
 
 

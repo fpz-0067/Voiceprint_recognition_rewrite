@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="lab_server">
+  <component name="PublishConfigData" autoUpload="Always" serverName="cu03">
     <serverData>
-      <paths name="lab_server">
+      <paths name="cu01">
         <serverdata>
           <mappings>
             <mapping deploy="/shengwenshibie" local="$PROJECT_DIR$/.." />
@@ -38,6 +38,36 @@
             <excludedPath path="/shengwenshibie/vggvox_rewrite/nohup.out" />
             <excludedPath local="true" path="$PROJECT_DIR$/nohup.out" />
           </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="cu03">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/shengwenshibie" local="$PROJECT_DIR$/.." />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/models" />
+            <excludedPath path="/shengwenshibie/vggvox_rewrite/models" />
+            <excludedPath local="true" path="$PROJECT_DIR$/weights" />
+            <excludedPath path="/shengwenshibie/vggvox_rewrite/weights" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../vggvox_rewrite_test" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../vggvox_rewrite_0" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../vggvox_rewrite_5" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="cu05">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="cu_Test">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
         </serverdata>
       </paths>
     </serverData>

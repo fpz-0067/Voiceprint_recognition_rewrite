@@ -19,7 +19,7 @@ def conv_bn_pool(inp_tensor, layer_idx, conv_filters, conv_kernel_size, conv_str
     x = ZeroPadding2D(padding=conv_pad, name='pad{}'.format(layer_idx))(inp_tensor)
     x = Conv2D(filters=conv_filters, kernel_size=conv_kernel_size, strides=conv_strides, padding='valid',
                name='{}{}'.format(conv_layer_prefix, layer_idx))(x)
-    x = BatchNormalization(epsilon=1e-5, momentum=1, name='bn{}'.format(layer_idx))(x)
+    x = BatchNormalization(epsilon=1e-5, momentum=1, name='bn{}'.format(layer_idx),trainable=False)(x,training=False)
     x = Activation('relu', name='relu{}'.format(layer_idx))(x)
     if pool == 'max':
         x = MaxPooling2D(pool_size=pool_size, strides=pool_strides, name='mpool{}'.format(layer_idx))(x)
@@ -34,7 +34,7 @@ def conv_bn_dynamic_apool(inp_tensor, layer_idx, conv_filters, conv_kernel_size,
     x = ZeroPadding2D(padding=conv_pad, name='pad{}'.format(layer_idx))(inp_tensor)
     x = Conv2D(filters=conv_filters, kernel_size=conv_kernel_size, strides=conv_strides, padding='valid',
                name='{}{}'.format(conv_layer_prefix, layer_idx))(x)
-    x = BatchNormalization(epsilon=1e-5, momentum=1, name='bn{}'.format(layer_idx))(x)
+    x = BatchNormalization(epsilon=1e-5, momentum=1, name='bn{}'.format(layer_idx),trainable=False)(x,training=False)
     x = Activation('relu', name='relu{}'.format(layer_idx))(x)
     x = GlobalAveragePooling2D(name='gapool{}'.format(layer_idx))(x)
     x = Reshape((1, 1, conv_filters), name='reshape{}'.format(layer_idx))(x)
@@ -58,6 +58,7 @@ def vggvox_model():
     x = conv_bn_pool(x, layer_idx=7, conv_filters=1024, conv_kernel_size=(1, 1), conv_strides=(1, 1), conv_pad=(0, 0),
                      conv_layer_prefix='fc')
     x = Lambda(lambda y: K.l2_normalize(y, axis=3), name='norm')(x)  # L2 归一化
+    # x = Conv2D(filters=1024, kernel_size=(1, 1), strides=(1, 1), padding='valid', name='fc8')(x)
     x = Conv2D(filters=c.N_CLASS, kernel_size=(1, 1), strides=(1, 1), padding='valid',activation="softmax",name='fc8')(x)
     m = Model(inp, x, name='VGGVox')
 
