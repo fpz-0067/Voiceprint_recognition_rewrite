@@ -14,7 +14,7 @@ def get_voxceleb1_datalist(FA_DIR, path):
 
 
 # 调用方法
-# get_voxceleb1_datalist(c.FA_DIR,"D:\Python_projects/vggvox_rewrite\cfg/trainlist.txt")
+# get_voxceleb1_datalist(c.FA_DIR,"D:\Python_projects/vggvox_rewrite\a_verify/trainlist.txt")
 
 # x = np.ones((3,5),dtype=int)
 # print("origin: ")
@@ -48,15 +48,27 @@ from keras.backend import set_learning_phase
 
 # set_learning_phase(1)
 
-model = load_model(c.MODEL_LOAD_PATH)
+# model = load_model(c.MODEL_LOAD_PATH)
+#
+# model = Model(inputs=model.layers[0].input,outputs=model.layers[34].output) #34
+#
+# x = np.random.normal(0,1,(512,100))
+# print(x.shape)
+# xxx = model.predict(x.reshape(1,*x.shape,1))
+# print(xxx)
+# print(xxx.shape)
 
-model = Model(inputs=model.layers[0].input,outputs=model.layers[34].output) #34
-
-x = np.random.normal(0,1,(512,100))
-print(x.shape)
-xxx = model.predict(x.reshape(1,*x.shape,1))
-print(xxx)
-print(xxx.shape)
+s = 200  # 100,200,300,...,1000
+s = np.floor((s - 7 + 2) / 2) + 1  # conv1  np.floor()返回不大于输入参数的最大整数,向下取整
+s = np.floor((s - 3) / 2) + 1  # mpool1
+s = np.floor((s - 5 + 2) / 2) + 1  # conv2
+s = np.floor((s - 3) / 2) + 1  # mpool2
+s = np.floor((s - 3 + 2) / 1) + 1  # conv3
+s = np.floor((s - 3 + 2) / 1) + 1  # conv4
+s = np.floor((s - 3 + 2) / 1) + 1  # conv5
+s = np.floor((s - 3) / 2) + 1  # mpool5
+s = np.floor((s - 1) / 1) + 1  # fc6
+print(s)
 
 
 

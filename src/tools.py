@@ -105,8 +105,8 @@ class DataGenerator(keras.utils.Sequence):
 
         for i, ID in enumerate(list_IDs_temp):
             b_data[i, :, :, 0] = get_fft_spectrum(ID, self.buckets)
-            # b_labels[i] = self.labels[indexes[i]]  # 0~n-1
-            b_labels[i] = self.labels[indexes[i]] - 1 # 1~n
+            b_labels[i] = self.labels[indexes[i]]  # 0~n-1
+            # b_labels[i] = self.labels[indexes[i]] - 1 # 1~n
 
         b_labels = keras.utils.to_categorical(b_labels, num_classes=self.n_classes)
         b_labels = b_labels.reshape(self.batch_size, 1, 1, self.n_classes)

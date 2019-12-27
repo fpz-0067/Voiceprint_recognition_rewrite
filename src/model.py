@@ -69,7 +69,7 @@ def test():
     model = vggvox_model()
     num_layers = len(model.layers)  # 0-35
 
-    x = np.random.randn(1, 512, 30, 1)
+    x = np.random.randn(1, 512, 300, 1)
     outputs = []
 
     for i in range(num_layers):

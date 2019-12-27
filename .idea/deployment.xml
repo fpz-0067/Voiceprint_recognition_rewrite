@@ -53,6 +53,7 @@
             <excludedPath local="true" path="$PROJECT_DIR$/../vggvox_rewrite_test" />
             <excludedPath local="true" path="$PROJECT_DIR$/../vggvox_rewrite_0" />
             <excludedPath local="true" path="$PROJECT_DIR$/../vggvox_rewrite_5" />
+            <excludedPath local="true" path="$PROJECT_DIR$/../VGG-Speaker-Recognition-master" />
           </excludedPaths>
         </serverdata>
       </paths>
