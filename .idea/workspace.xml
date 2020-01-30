@@ -2,37 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd8e5e9-993c-4896-8565-58e33ccd3584" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/a_iden/new_train.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a_iden/test_for_iden.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a_iden/tmp.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a_iden/tmp.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a_iden/tmp_test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a_iden/tmp_train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a_iden/train_list_iden.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a_verify/new_train_list.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a_verify/tmp.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a_verify/tmp.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a_verify/voxceleb1_veri_test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/identiﬁcation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/veriﬁcation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/delete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/get_all_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/get_biggest_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/veri_train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vggvox_rewrite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vggvox_rewrite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/new_enroll_list.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/new_test_list.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/tmp.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/train_list.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/train_list_origin.csv" beforeDir="false" afterPath="$PROJECT_DIR$/a_verify/train_list_origin.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cfg/trainlist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/a_iden/test_for_iden.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a_iden/test_for_iden.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a_iden/tmp_test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/a_iden/tmp_train.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/a_iden/train_list_iden.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a_iden/train_list_iden.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a_verify/new_train_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a_veri/train_list_veri.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a_verify/tmp.csv" beforeDir="false" afterPath="$PROJECT_DIR$/a_veri/tmp.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a_verify/tmp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a_veri/tmp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a_verify/train_list_origin.csv" beforeDir="false" afterPath="$PROJECT_DIR$/a_veri/train_list_origin.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a_verify/voxceleb1_veri_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/a_veri/voxceleb1_veri_test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/iden_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/iden_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/identiﬁcation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/identiﬁcation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/new_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/iden_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/score.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/score.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/veriﬁcation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/veriﬁcation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/learn_np.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/learn_np.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/gene_enroll_and_test_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/gene_enroll_and_test_csv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,95 +72,7 @@
       <recent name="D:\Python_projects\vggvox_rewrite" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.iden_train">
-    <configuration name="delete" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="vggvox_rewrite" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/delete.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="gene_enroll_and_test_csv" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="vggvox_rewrite" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/gene_enroll_and_test_csv.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="get_all_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="vggvox_rewrite" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/get_all_list.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="get_biggest_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="vggvox_rewrite" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/get_biggest_file.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.model">
     <configuration name="iden_train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="vggvox_rewrite" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,20 +95,108 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="vggvox_rewrite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="resNet" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="vggvox_rewrite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/resNet.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="veri_train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="vggvox_rewrite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/veri_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="veriﬁcation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="vggvox_rewrite" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/veriﬁcation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.gene_enroll_and_test_csv" />
-      <item itemvalue="Python.get_biggest_file" />
-      <item itemvalue="Python.delete" />
-      <item itemvalue="Python.get_all_list" />
       <item itemvalue="Python.iden_train" />
+      <item itemvalue="Python.veri_train" />
+      <item itemvalue="Python.veriﬁcation" />
+      <item itemvalue="Python.resNet" />
+      <item itemvalue="Python.model" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.model" />
         <item itemvalue="Python.iden_train" />
-        <item itemvalue="Python.gene_enroll_and_test_csv" />
-        <item itemvalue="Python.delete" />
-        <item itemvalue="Python.get_all_list" />
-        <item itemvalue="Python.get_biggest_file" />
+        <item itemvalue="Python.resNet" />
+        <item itemvalue="Python.veriﬁcation" />
+        <item itemvalue="Python.veri_train" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +242,18 @@
       <workItem from="1577004003989" duration="4810000" />
       <workItem from="1577109524280" duration="853000" />
       <workItem from="1577360275744" duration="8567000" />
-      <workItem from="1577434375930" duration="21240000" />
+      <workItem from="1577434375930" duration="21654000" />
+      <workItem from="1577514423892" duration="15351000" />
+      <workItem from="1577601628237" duration="11624000" />
+      <workItem from="1577692243364" duration="13235000" />
+      <workItem from="1577781749658" duration="413000" />
+      <workItem from="1577951636414" duration="581000" />
+      <workItem from="1578045920541" duration="366000" />
+      <workItem from="1579230108438" duration="706000" />
+      <workItem from="1579310621232" duration="66000" />
+      <workItem from="1579341342504" duration="2225000" />
+      <workItem from="1579399887231" duration="2955000" />
+      <workItem from="1579483603745" duration="2239000" />
     </task>
     <task id="LOCAL-00001" summary="2019/12/16">
       <created>1576487072117</created>
@@ -268,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576921091483</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2019/12/27">
+      <created>1577459834717</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577459834717</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +298,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2019/12/16" />
     <MESSAGE value="2019/12/21" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019/12/21" />
+    <MESSAGE value="2019/12/27" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019/12/27" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="93" key="#Deployment" timestamp="1577020728981">
@@ -301,10 +310,10 @@
       <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state x="392" y="93" key="#Options/63.0.1473.864@63.0.1473.864" timestamp="1576231019922" />
-    <state x="255" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577459312654">
+    <state x="255" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577710533779">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
-    <state x="255" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/63.0.1473.864@63.0.1473.864" timestamp="1577459312654" />
+    <state x="255" y="90" key="#com.intellij.execution.impl.EditConfigurationsDialog/63.0.1473.864@63.0.1473.864" timestamp="1577710533779" />
     <state x="470" y="201" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576591383586">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
@@ -317,70 +326,89 @@
       <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state x="480" y="161" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/63.0.1473.864@63.0.1473.864" timestamp="1576492495609" />
-    <state x="530" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576415789732">
+    <state x="530" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577518550591">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
-    <state x="530" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/63.0.1473.864@63.0.1473.864" timestamp="1576415789732" />
-    <state x="416" y="29" key="CommitChangelistDialog2" timestamp="1576921084476">
+    <state x="530" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/63.0.1473.864@63.0.1473.864" timestamp="1577518550591" />
+    <state x="416" y="29" key="CommitChangelistDialog2" timestamp="1577459830622">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
-    <state x="416" y="29" key="CommitChangelistDialog2/63.0.1473.864@63.0.1473.864" timestamp="1576921084476" />
+    <state x="416" y="29" key="CommitChangelistDialog2/63.0.1473.864@63.0.1473.864" timestamp="1577459830622" />
     <state x="156" y="93" width="1287" height="678" key="DiffContextDialog" timestamp="1576376539497">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state x="156" y="93" width="1287" height="678" key="DiffContextDialog/63.0.1473.864@63.0.1473.864" timestamp="1576376539497" />
-    <state x="194" y="74" width="1287" height="678" key="DirDiffDialog" timestamp="1577456030872">
+    <state x="194" y="74" width="1287" height="677" key="DirDiffDialog" timestamp="1578046242600">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
-    <state x="194" y="74" width="1287" height="678" key="DirDiffDialog/63.0.1473.864@63.0.1473.864" timestamp="1577456030872" />
-    <state x="645" y="123" key="FileChooserDialogImpl" timestamp="1577020726728">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state x="194" y="74" width="1287" height="677" key="DirDiffDialog/63.0.1473.864@63.0.1473.864" timestamp="1578046242600" />
+    <state x="670" y="128" width="657" height="484" key="FileChooserDialogImpl" timestamp="1579341441595">
+      <screen x="63" y="0" width="1537" height="900" />
     </state>
     <state x="645" y="123" key="FileChooserDialogImpl/63.0.1473.864@63.0.1473.864" timestamp="1577020726728" />
-    <state width="1430" height="266" key="GridCell.Tab.0.bottom" timestamp="1577459638840">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state x="670" y="128" width="657" height="484" key="FileChooserDialogImpl/63.0.1537.900@63.0.1537.900" timestamp="1579341441595" />
+    <state width="1494" height="452" key="GridCell.Tab.0.bottom" timestamp="1579447257865">
+      <screen x="63" y="0" width="1537" height="900" />
     </state>
-    <state width="1430" height="266" key="GridCell.Tab.0.bottom/63.0.1473.864@63.0.1473.864" timestamp="1577459638840" />
-    <state width="1430" height="266" key="GridCell.Tab.0.center" timestamp="1577459638840">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state width="1430" height="326" key="GridCell.Tab.0.bottom/63.0.1473.864@63.0.1473.864" timestamp="1578046289320" />
+    <state width="1494" height="452" key="GridCell.Tab.0.bottom/63.0.1537.900@63.0.1537.900" timestamp="1579447257865" />
+    <state width="1494" height="452" key="GridCell.Tab.0.center" timestamp="1579447257865">
+      <screen x="63" y="0" width="1537" height="900" />
     </state>
-    <state width="1430" height="266" key="GridCell.Tab.0.center/63.0.1473.864@63.0.1473.864" timestamp="1577459638840" />
-    <state width="1430" height="266" key="GridCell.Tab.0.left" timestamp="1577459638839">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state width="1430" height="326" key="GridCell.Tab.0.center/63.0.1473.864@63.0.1473.864" timestamp="1578046289320" />
+    <state width="1494" height="452" key="GridCell.Tab.0.center/63.0.1537.900@63.0.1537.900" timestamp="1579447257865" />
+    <state width="1494" height="452" key="GridCell.Tab.0.left" timestamp="1579447257865">
+      <screen x="63" y="0" width="1537" height="900" />
     </state>
-    <state width="1430" height="266" key="GridCell.Tab.0.left/63.0.1473.864@63.0.1473.864" timestamp="1577459638839" />
-    <state width="1430" height="266" key="GridCell.Tab.0.right" timestamp="1577459638840">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state width="1430" height="326" key="GridCell.Tab.0.left/63.0.1473.864@63.0.1473.864" timestamp="1578046289320" />
+    <state width="1494" height="452" key="GridCell.Tab.0.left/63.0.1537.900@63.0.1537.900" timestamp="1579447257865" />
+    <state width="1494" height="452" key="GridCell.Tab.0.right" timestamp="1579447257865">
+      <screen x="63" y="0" width="1537" height="900" />
     </state>
-    <state width="1430" height="266" key="GridCell.Tab.0.right/63.0.1473.864@63.0.1473.864" timestamp="1577459638840" />
-    <state x="219" y="46" key="SettingsEditor" timestamp="1576590554287">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state width="1430" height="326" key="GridCell.Tab.0.right/63.0.1473.864@63.0.1473.864" timestamp="1578046289320" />
+    <state width="1494" height="452" key="GridCell.Tab.0.right/63.0.1537.900@63.0.1537.900" timestamp="1579447257865" />
+    <state x="226" y="48" key="SettingsEditor" timestamp="1579341517444">
+      <screen x="63" y="0" width="1537" height="900" />
     </state>
     <state x="219" y="46" key="SettingsEditor/63.0.1473.864@63.0.1473.864" timestamp="1576590554287" />
-    <state x="279" y="82" key="Vcs.Push.Dialog.v2" timestamp="1576921094909">
+    <state x="226" y="48" key="SettingsEditor/63.0.1537.900@63.0.1537.900" timestamp="1579341517444" />
+    <state x="279" y="82" key="Vcs.Push.Dialog.v2" timestamp="1577459883701">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
-    <state x="279" y="82" key="Vcs.Push.Dialog.v2/63.0.1473.864@63.0.1473.864" timestamp="1576921094909" />
-    <state x="194" y="148" width="614" height="360" key="com.intellij.ide.util.TipDialog" timestamp="1576592464761">
-      <screen x="63" y="0" width="1473" height="864" />
+    <state x="279" y="82" key="Vcs.Push.Dialog.v2/63.0.1473.864@63.0.1473.864" timestamp="1577459883701" />
+    <state x="200" y="154" width="614" height="360" key="com.intellij.ide.util.TipDialog" timestamp="1579483669416">
+      <screen x="63" y="0" width="1537" height="900" />
     </state>
-    <state x="194" y="148" width="614" height="360" key="com.intellij.ide.util.TipDialog/63.0.1473.864@63.0.1473.864" timestamp="1576592464761" />
+    <state x="194" y="148" width="614" height="360" key="com.intellij.ide.util.TipDialog/63.0.1473.864@63.0.1473.864" timestamp="1577601787326" />
+    <state x="200" y="154" key="com.intellij.ide.util.TipDialog/63.0.1537.900@63.0.1537.900" timestamp="1579483669416" />
     <state x="690" y="137" width="384" height="527" key="ftp.server.browser" timestamp="1576588338141">
       <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state x="690" y="137" width="384" height="527" key="ftp.server.browser/63.0.1473.864@63.0.1473.864" timestamp="1576588338141" />
+    <state x="640" y="302" key="git4idea.ui.GitTagDialog" timestamp="1580371896381">
+      <screen x="63" y="0" width="1537" height="900" />
+    </state>
+    <state x="640" y="302" key="git4idea.ui.GitTagDialog/63.0.1537.900@63.0.1537.900" timestamp="1580371896381" />
+    <state x="553" y="367" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1579343252839">
+      <screen x="63" y="0" width="1537" height="900" />
+    </state>
+    <state x="553" y="367" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/63.0.1537.900@63.0.1537.900" timestamp="1579343252839" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/vggvox_rewrite$iden_train.coverage" NAME="iden_train Coverage Results" MODIFIED="1577459319157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/vggvox_rewrite$iden_train.coverage" NAME="iden_train Coverage Results" MODIFIED="1578046105365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/vggvox_rewrite$learn_np.coverage" NAME="learn_np Coverage Results" MODIFIED="1577004515304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/vggvox_rewrite$veri_train.coverage" NAME="veri_train Coverage Results" MODIFIED="1577520401397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/vggvox_rewrite$delete.coverage" NAME="delete Coverage Results" MODIFIED="1577455496393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/vggvox_rewrite$resNet.coverage" NAME="resNet Coverage Results" MODIFIED="1577713103456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
+    <SUITE FILE_PATH="coverage/vggvox_rewrite$identication.coverage" NAME="identiﬁcation Coverage Results" MODIFIED="1577518005320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/vggvox_rewrite$new_train.coverage" NAME="new_train Coverage Results" MODIFIED="1577434649537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/vggvox_rewrite$get_all_list.coverage" NAME="get_all_list Coverage Results" MODIFIED="1577455008799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/vggvox_rewrite$gene_enroll_and_test_csv.coverage" NAME="gene_enroll_and_test_csv Coverage Results" MODIFIED="1577456474988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/vggvox_rewrite$train.coverage" NAME="train Coverage Results" MODIFIED="1575987021277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/vggvox_rewrite$get_biggest_file.coverage" NAME="get_biggest_file Coverage Results" MODIFIED="1577444573763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/vggvox_rewrite$model.coverage" NAME="model Coverage Results" MODIFIED="1575986332988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/vggvox_rewrite$model.coverage" NAME="model Coverage Results" MODIFIED="1579400091429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/vggvox_rewrite$pre_shell.coverage" NAME="pre_shell Coverage Results" MODIFIED="1576238414265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/vggvox_rewrite$verication.coverage" NAME="veriﬁcation Coverage Results" MODIFIED="1577539426223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/vggvox_rewrite$score.coverage" NAME="score Coverage Results" MODIFIED="1577021855243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/vggvox_rewrite$model__1_.coverage" NAME="model (1) Coverage Results" MODIFIED="1576052731751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/vggvox_rewrite$new_score.coverage" NAME="new_score Coverage Results" MODIFIED="1577439122404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />

@@ -152,3 +152,16 @@ def draw_acc_img(history_dict,save_path):
     plt.legend()  # 绘图
     plt.savefig(save_path)
     plt.show()
+
+def calculate_eer(y, y_score):
+    # y denotes groundtruth scores,
+    # y_score denotes the prediction scores.
+    from scipy.optimize import brentq
+    from sklearn.metrics import roc_curve
+    from scipy.interpolate import interp1d
+
+    fpr, tpr, thresholds = roc_curve(y, y_score, pos_label=1)
+    eer = brentq(lambda x : 1. - x - interp1d(fpr, tpr)(x), 0., 1.)
+    thresh = interp1d(fpr, thresholds)(eer)
+
+    return eer

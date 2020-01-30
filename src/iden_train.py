@@ -26,8 +26,8 @@ def train_vggvox_model(model_load_path, model_save_path,continue_training, save_
     # train_data["lable"] = train_data["lable"].apply(lambda x: x.reshape((1, 1, 1, 1251)))
 
     tbcallbacks = keras.callbacks.TensorBoard(log_dir=c.TENSORBOARD_LOG_PATH, histogram_freq=0, write_graph=True, write_images=False,
-                                              update_freq=c.BATCH_SIZE * 100)
-    callbacks = [keras.callbacks.ModelCheckpoint(os.path.join(c.IDEN_MODEL_FA_PATH,'iden_model_128_{epoch:02d}_{loss:.3f}_{acc:.3f}.h5'),
+                                              update_freq=c.BATCH_SIZE * 10000)
+    callbacks = [keras.callbacks.ModelCheckpoint(os.path.join(c.IDEN_MODEL_FA_PATH,'iden_model_128_{epoch:02d}_{loss:.3f}_{acc:.3f}_add95.h5'),
                                                  monitor='loss',
                                                  mode='min',
                                                  save_best_only=True,

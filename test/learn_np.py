@@ -14,7 +14,7 @@ def get_voxceleb1_datalist(FA_DIR, path):
 
 
 # 调用方法
-# get_voxceleb1_datalist(c.FA_DIR,"D:\Python_projects/vggvox_rewrite\a_verify/trainlist.txt")
+# get_voxceleb1_datalist(c.FA_DIR,"D:\Python_projects/vggvox_rewrite\a_veri/trainlist.txt")
 
 # x = np.ones((3,5),dtype=int)
 # print("origin: ")

@@ -12,36 +12,28 @@ DIM = (512, 300, 1)
 # Model
 WEIGHTS_FILE = "weights/weights.h5"
 COST_METRIC = "cosine"  # euclidean or cosine
-INPUT_SHAPE=(NUM_FFT,None,1)
+INPUT_SHAPE=(NUM_FFT,300,1)
 
 # IO on windows
 # FA_DIR = "F:/Vox_data/vox1_dev_wav/wav/"
-# TRAIN_LIST_FILE = "a_verify/trainlist.txt"
+# TRAIN_LIST_FILE = "a_veri/trainlist.txt"
 # PERSONAL_WEIGHT = "D:\Python_projects/vggvox_rewrite\weights/weight_128.h5"
 
 # IO on linux
 FA_DIR = "/home/longfuhui/all_data/vox1-dev-wav/wav/"
-TRAIN_LIST_FILE = "a_verify/new_train_list.txt"
 PERSONAL_WEIGHT = "weights/weight_128.h5"
-
-ENROLL_LIST_FILE = "a_verify/new_enroll_list.csv"
-TEST_LIST_FILE = "a_verify/new_test_list.csv"
 RESULT_FILE = "results/results.csv"
 
 # train
-MODEL_LOAD_PATH = "models/model_1211.h5"
-MODEL_SAVE_PATH = "models/model_1211.h5"
-
-MODEL_FA_PATH = "models/m_1211/"
 TENSORBOARD_LOG_PATH = "tensorboard/log"
 LOSS_PNG = "img/loss.png"
 ACC_PNG = "img/acc.png"
-CONTINUE_TRAINING = 0
+CONTINUE_TRAINING = 1
 SAVE = 1
 LR = 0.001
-EPOCHS = 1
-BATCH_SIZE = 16
-N_CLASS = 4
+EPOCHS = 20
+BATCH_SIZE = 64
+N_CLASS = 128
 
 '''
 Identification
@@ -49,15 +41,20 @@ Identification
 # train
 IDEN_TRAIN_LIST_FILE = "a_iden/train_list_iden.txt"
 IDEN_MODEL_FA_PATH = "models/iden/m_128/"
-IDEN_MODEL_PATH = "models/iden/iden_model_test.h5"
+IDEN_MODEL_PATH = "models/iden/m_128/iden_model_128_20_0.017_1.000_add75.h5"
 
 # test
-IDEN_TEST_FILE = "a_verify/tmp.txt"
+IDEN_TEST_FILE = "a_iden/test_for_iden.txt"
 IDEN_MODEL_LOAD_PATH = "models/iden/iden_model_test.h5"
 
 '''
 verification
 '''
 # train
+VERI_TRAIN_LIST_FILE = "a_veri/train_list_veri.txt"
+VERI_MODEL_FA_PATH = "models/veri/m_128/"
+VERI_MODEL_PATH = "models/veri/veri_model_test.h5"
 
 # test
+VERI_TEST_FILE = "a_veri/voxceleb1_veri_test.txt"
+VERI_MODEL_LOAD_PATH = "models/veri/veri_model_test.h5"

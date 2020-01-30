@@ -1,5 +1,5 @@
 import os
-
+import time
 import scipy.io as sio
 import numpy as np
 import keras.backend as K
@@ -19,7 +19,7 @@ def conv_bn_pool(inp_tensor, layer_idx, conv_filters, conv_kernel_size, conv_str
     x = ZeroPadding2D(padding=conv_pad, name='pad{}'.format(layer_idx))(inp_tensor)
     x = Conv2D(filters=conv_filters, kernel_size=conv_kernel_size, strides=conv_strides, padding='valid',
                name='{}{}'.format(conv_layer_prefix, layer_idx))(x)
-    x = BatchNormalization(epsilon=1e-5, momentum=1, name='bn{}'.format(layer_idx),trainable=False)(x,training=False)
+    x = BatchNormalization(epsilon=1e-5, momentum=1, name='bn{}'.format(layer_idx))(x,training=False)
     x = Activation('relu', name='relu{}'.format(layer_idx))(x)
     if pool == 'max':
         x = MaxPooling2D(pool_size=pool_size, strides=pool_strides, name='mpool{}'.format(layer_idx))(x)
@@ -34,7 +34,7 @@ def conv_bn_dynamic_apool(inp_tensor, layer_idx, conv_filters, conv_kernel_size,
     x = ZeroPadding2D(padding=conv_pad, name='pad{}'.format(layer_idx))(inp_tensor)
     x = Conv2D(filters=conv_filters, kernel_size=conv_kernel_size, strides=conv_strides, padding='valid',
                name='{}{}'.format(conv_layer_prefix, layer_idx))(x)
-    x = BatchNormalization(epsilon=1e-5, momentum=1, name='bn{}'.format(layer_idx),trainable=False)(x,training=False)
+    x = BatchNormalization(epsilon=1e-5, momentum=1, name='bn{}'.format(layer_idx))(x,training=False)
     x = Activation('relu', name='relu{}'.format(layer_idx))(x)
     x = GlobalAveragePooling2D(name='gapool{}'.format(layer_idx))(x)
     x = Reshape((1, 1, conv_filters), name='reshape{}'.format(layer_idx))(x)
@@ -69,17 +69,25 @@ def test():
     model = vggvox_model()
     num_layers = len(model.layers)  # 0-35
 
+    print(model.summary())
+    time.sleep(30000)
+
+    # x = np.random.randn(1, 512, 300, 1)
+    # outputs = []
+    #
+    # for i in range(num_layers):
+    #     get_ith_layer_output = K.function([model.layers[0].input, K.learning_phase()],
+    #                                       [model.layers[i].output])
+    #     layer_output = get_ith_layer_output([x, 0])[0]  # output in test mode = 0
+    #     outputs.append(layer_output)
+    #
+    # for i in range(num_layers):
+    #     print("Shape of layer {} output:{}".format(i, outputs[i].shape))
+
     x = np.random.randn(1, 512, 300, 1)
-    outputs = []
-
-    for i in range(num_layers):
-        get_ith_layer_output = K.function([model.layers[0].input, K.learning_phase()],
-                                          [model.layers[i].output])
-        layer_output = get_ith_layer_output([x, 0])[0]  # output in test mode = 0
-        outputs.append(layer_output)
-
-    for i in range(num_layers):
-        print("Shape of layer {} output:{}".format(i, outputs[i].shape))
+    v = model.predict(x)
+    print(v.shape)
+    print("res:\n",v)
 
 
 if __name__ == '__main__':

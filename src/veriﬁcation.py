@@ -10,10 +10,12 @@ from glob import glob
 from model import vggvox_model
 from wav_reader import get_fft_spectrum
 from tools import build_buckets
+from tools import calculate_eer
 import constants as c
 from keras.models import Model
 
 '''
+说话人确认
 使用EER作为测试指标
 '''
 
@@ -55,10 +57,24 @@ def score(testfile,fa_data_dir,test_model_path,max_sec, step_sec, frame_step,met
         v1 = feats[ind1,0,0]
         v2 = feats[ind2,0,0]
 
-        distances = cdist(v1, v2, metric=metric)
-        print(distances[0][0])
+        # print(v1 - v2)
 
-        if c>-1:
-            break
+        # print(np.sum(v1*v1))
+        # print(np.sum(v2*v2))
 
-score(c.NEW_TEST_FILE,c.FA_DIR,c.TEST_MODEL_PATH,c.MAX_SEC, c.BUCKET_STEP, c.FRAME_STEP,c.COST_METRIC)
+        scores += [np.sum(v1 * v2)]
+        labels += [verify_lb[c]]
+
+        # print("scores: ",scores)
+        # print("labels: ",labels)
+
+        # if c>0:
+        #     break
+
+    scores = np.array(scores)
+    labels = np.array(labels)
+
+    eer = calculate_eer(labels, scores)
+    print("EER: {}".format(eer))
+
+score(c.VERI_TEST_FILE,c.FA_DIR,c.VERI_MODEL_LOAD_PATH,c.MAX_SEC, c.BUCKET_STEP, c.FRAME_STEP,c.COST_METRIC)
